@@ -10,13 +10,13 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <!-- <template v-if="newEmail.length===30"> -->
-                <li v-for="item in newEmail" >{{item}}</li>
-            <!-- </template> -->
-         
-        </ul>
+        <ul v-if="newEmail.length===30">
+            <li v-for="item in newEmail" >{{item}}</li>
+        </ul> 
+        <button @click="rndEmail()">clicca</button>
 
+
+        
     </div>
     
     <script src="js/script.js"></script>
